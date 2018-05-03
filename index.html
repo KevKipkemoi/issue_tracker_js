@@ -1,0 +1,51 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Issue Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.min.css" />
+</head>
+<body onload="fetchIssues()">
+    <div class="container">
+        <h1>Js IssueTracker <small>by KevKipkemoi</small></h1>
+        <div class="jumbotron">
+            <h3>Add New Issue:</h3>
+            <form id="issueInputForm">
+
+                <div class="form-group">
+                    <label for="issueDescInput">Description</label>
+                    <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue...">
+                </div>
+
+                <div class="form-group">
+                    <label for="issueSeverityInput">Severity</label>
+                    <select id="issueSeverityInput">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="issueAssignedToInput">Assigned To</label>
+                    <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter the person responsible">
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+        </div>
+        <div class="col-lg-12">
+                <div id="issuesList"></div>
+        </div>
+        <div class="footer">
+                <p>&copy KevKipkemoi</p>
+        </div>
+    </div>
+
+    <script src="chance.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
